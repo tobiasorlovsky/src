@@ -1,0 +1,156 @@
+/* SETTINGS
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+*/
+//font settings
+$font-size-base: 100%;
+$font-family: "Maven Pro", sans-serif;
+
+//color settings
+$color-text: #333333;
+$color-primary: #ffa904;
+$color-secondary: #0262b8;
+$color-secondary-pointer: #538dc1;
+
+/* CONTAINERS
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+*/
+.contact {
+    text-align: left;
+    max-width: 28.125rem;
+    padding-left: 6.25rem;
+}
+
+/* TYPOGRAPHY
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+*/
+
+p > a {
+    text-decoration: underline;
+}
+
+.left-a {
+  padding-left: 20px;
+  text-align: right;
+}
+
+p {
+  text-align: left;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  text-align: left;
+}
+
+.name {
+  text-align: left;
+}
+
+
+
+
+/* CONTACT FORM
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+*/
+
+input[type=text],
+input[type=email], textarea {
+    width: 100%;
+    padding: .75rem;
+    border: .0625rem solid $color-secondary-pointer;
+    border-radius: .25rem; 
+    box-sizing: border-box;
+    margin-top: .375rem; 
+    margin-bottom: 1rem; 
+    resize: vertical 
+  }
+
+  input[type=submit] {
+    background-color: $color-secondary;
+    color: white;
+    padding: .75rem 1.25rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: $color-secondary-pointer;
+  }
+  
+  textarea {
+    min-height: 6.25rem;
+    max-height: 15.625rem;
+  }
+/* MEDIA QUERIES
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+*/
+@media (max-width: 1300px) {
+
+  .contact {
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      max-width: 50%;
+      padding-left: 0;
+  }
+
+  .contact-padding {
+    padding-left: 2.5rem;
+  }
+
+  table {
+    margin: 0 !important; 
+  }
+}
+
+@media (max-width: 1100px) {
+
+  table {
+    margin: 0 auto !important; 
+  }
+
+  .contact {
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      max-width: 100%;
+      padding-left: 0;
+  }
+
+  .contact-padding {
+    padding-left: 0;
+  }
+
+  h1, h3, p {
+    text-align: center;
+  }
+
+input[type=text],
+input[type=email]{
+    width: 49%;
+    float: left;
+    margin-left: .3125rem;
+  }
+
+}
+
+@media (max-width: 720px) {
+  input[type=text],
+input[type=email]{
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
+
+
+}
+

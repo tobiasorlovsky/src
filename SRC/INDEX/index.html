@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/stylesrc.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">    <title>Športové a relaxačné centrum-ŠRC</title>
+</head>
+<body>
+    <article>
+        <div class="content-container">
+
+            <div class="responsive-menu">
+                <button class="hamburger-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="menu-script" style="display: none;">
+
+            </div>
+            <script>
+                fetch('../NAVIGACIA/navigation.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('menu-script').innerHTML = data;
+                document.getElementById(`menu-script`).style.display = `block`;
+                });
+            </script>
+            <div class="content-bar">
+                <div class="position-clearfix">
+                        <div class="full-width-container long-word">
+                            <h1>NAJVÄČŠIE FITNESS CENTRUM V STAROĽUBOVNIANSKOM OKRESE
+                            </h1>
+                            
+                            <img class="full-width" src="../img/69ec4d73-aa9b-4e94-97ed-37337c868dd4.jpg" alt="fitness centrum ŠRC">
+                         
+                        </div>
+
+                        <button>
+                            <a href="../FITNESS_SQUASH/fitness.html">Zobraziť viac
+
+                            </a>
+                        </button>
+
+                        <div class="full-width-container">
+                            <h1>Tréneri ŠRC fitness
+
+                            </h1>
+
+                        </div>
+
+                        <div class="flex-box">
+                            <div class="flex-box-container1-4">
+                                <img class="trainers" src="../img/ada.png" alt="Adriana Stesňaková">
+                                <img class="trainers" src="../img/natalia_rybovicova.jpg" alt="Natália Rybovičová">
+                                <img class="trainers" src="../img/sidonia.png" alt="Sidónia Compľová">
+                                <img class="trainers" src="../img/patrik.png" alt="Patrik Řezníček">
+
+                            </div>
+                        </div>
+
+                        <div class="full-width-container">
+                            <button>
+                                <a href="../TRENERI/treneri.html">Zobraziť viac
+
+                                </a>
+                            </button>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+            
+    </article>
+    <script src="../NAVIGACIA/navigation.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/stylesrc.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">    
+    <title>Kaviareň</title>
+</head>
+<body>
+    <article>
+        <div class="content-container">
+
+            <div class="responsive-menu">
+                <button class="hamburger-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="menu-script" style="display: none;">
+
+            </div>
+            <script>
+                fetch('../NAVIGACIA/navigation.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('menu-script').innerHTML = data;
+                document.getElementById(`menu-script`).style.display = `block`;
+                });
+            </script>
+                
+            <div class="content-bar">
+                <div class="position-clearfix">
+                    <div class="full-width-container">
+
+                        <h1 class="long-word">JEDINEČNÁ KAVIAREŇ NA NAJVÄČŠOM STAROĽUBOVNIANSKOM SÍDLISKU
+                        </h1>
+
+                        <img src="../img/img2.jpg" alt="kaviareň">
+                        <p>Multifunkčný priestor bývalej kotolne nájdete na najväčšom a najznámejšom sídlisku Starej Ľubovne už 20 rokov. Športové a relaxačné centrum ponúka všetko, čo vám spôsobí radosť a vyplaví z tela endorfíny.
+                        </p>
+                        <p>Dotyk industriálneho štýlu cítiť z bielo-sivých stien, svetlých drevených stoličiek a ručne robených doplnkov. Interiér vo vás zanechá pocit pohody, pokoja a uvoľnenej atmosféry. Na svoje si tu prídu aj rodiny s deťmi. Obrovské interiérové ihrisko, bowlingové dráhy, posilňovňa a workoutová veža… Skvelé, toľko možností na jednom mieste!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <script src="../NAVIGACIA/navigation.js"></script>
+</body>
+</html> 

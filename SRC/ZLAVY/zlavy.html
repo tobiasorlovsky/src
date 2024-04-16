@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/stylesrc.css">
+    <link rel="stylesheet" href="../css/zlavy.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">    <title>ŠRC ZĽAVY</title>
+</head>
+<body>
+    <article>
+        <div class="content-container">
+
+            <div class="responsive-menu">
+                <button class="hamburger-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="menu-script" style="display: none;">
+
+            </div>
+            <script>
+                fetch('../NAVIGACIA/navigation.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('menu-script').innerHTML = data;
+                document.getElementById(`menu-script`).style.display = `block`;
+                });
+            </script>
+            
+            <div class="content-bar">
+
+                <div class="position-clearfix">
+
+                    <div class="full-width-container">
+                        <h1>Ako sa zaradiť do zľavovej skupiny?
+                        </h1>
+
+                        <ol>
+                            <li>prihlás sa do svojho účtu na <a href="https://fit.srcsl.sk/login" target="_blank"><b>fit.srcsl.sk</b></a>
+                            </li>
+
+                            <li>v pravom menu klikni na kolónku NAHRAŤ PREUKAZ NA ZÍSKANIE ZĽAVOVEJ SKUPINY
+                            </li>
+
+                            <li>vyber zľavovú skupinu, do ktorej sa chceš zaradiť : študent / silové zložky (policajti a hasiči)
+                            </li>
+
+                            <li>nahraj potvrdenie o návšteve školy / ISIC z prednej a zadnej strany
+                            </li>
+
+                            <li>po nahratí si automaticky zaradený v zľavovej skupine
+                            </li>
+
+                        </ol>
+
+                        <p class="left-p">
+                            Doklady nahraté v zľavových skupinách kontrolujeme 1x týždenne. V prípade, že užívateľ do systému nahrá neplatné doklady, bude mu deaktivovaná permanentka bez možnosti vrátenia peňazí.
+                            <br>
+                            Študenti pozor! Doklady na získanie študentskej zľavy je nutné nahrať každý rok po 20.9. nanovo, s platnou ISIC kartou / dokladom o návšteve školy v danom školskom roku / semestri.
+                        </p>
+                    </div>
+                    
+                    <div class="flex-box">
+                        
+                            <div class="flex-box-container">
+                                <img src="../img/1.jpeg" alt="Screenshot-menu-zľavová skupina">
+                                
+                            </div>
+                            
+                            <div class="flex-box-container">
+                                <img src="../img/2.jpeg" alt="Screenshot-nahranie dokladu na získanie zľavovej skupiny">  
+                            </div>
+                    </div>
+                </div>
+            </div>    
+        </div>    
+    </article>
+    <script src="../NAVIGACIA/navigation.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>

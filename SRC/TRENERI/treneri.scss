@@ -1,0 +1,151 @@
+/* ANIMATIONS
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+*/
+/*font settings*/
+$font-size-base: 100%;
+$font-family: "Maven Pro", sans-serif;
+
+/*color settings*/
+$color-text: #333333;
+$color-primary: #ffa904;
+$color-secondary: #0262b8;
+$color-secondary-pointer: #538dc1;
+
+
+/*general*/
+.content-bar {
+  width: 100%;
+}
+
+/* CONTAINERS
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+*/
+
+.slideshow-container {
+  max-width: 62.5rem;
+  margin-top: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.fade {
+  animation-name: fadeEffect;
+  animation-duration: 1s;
+  display: flex;
+}
+
+
+.image {
+  max-width: 18.75rem;
+  margin-right: 1.875rem;
+  
+  height: auto;
+  flex: 1;
+}
+
+.image img {
+  width: 18.75rem;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* TYPOGRAPHY
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+*/
+.text {
+  overflow: hidden;
+  max-width: 100%;
+  flex: 1;
+}
+
+.text h2 {
+  margin-bottom: .625rem;
+}
+
+.text p {
+  margin-top: .9375rem;
+  margin-bottom: .625rem;
+}
+
+.tel {
+  color: $color-primary;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: underline;
+  &:focus,
+  &:hover {
+    color: $color-secondary;
+  }
+}
+
+.h1-big {
+  font-size: 3.125rem !important;
+  margin-top: 4.375rem !important;
+  margin-bottom: 3.125rem !important;
+}
+
+
+
+/* MEDIA QUERIES
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+*/
+@media screen and (max-width: 1230px) {
+  .image img {
+    max-width: 90%;
+  }
+  .image {
+    padding-top: 30px;
+  }
+  .h1-big {
+    font-size: 2rem !important;
+    margin: .67rem !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .image {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .slideshow-container,
+  .slide {
+    display: block !important;
+  }
+
+  .slide {
+    margin-bottom: 3rem;
+
+  }
+
+  .prev,
+  .next {
+    display: none;
+  }
+
+  .image {
+    margin: 0;
+    align-items: center;
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  h1 {
+    margin: 1.25rem !important;
+  }
+
+}
+

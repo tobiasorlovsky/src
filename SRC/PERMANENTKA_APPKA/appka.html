@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/stylesrc.css">
+    <link rel="stylesheet" href="../css/appka.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">    <title>ŠRC APPKA</title>
+</head>
+<body>
+    <article>
+        <div class="content-container">
+
+            <div class="responsive-menu">
+                <button class="hamburger-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="menu-script" style="display: none;">
+
+            </div>
+            <script>
+                fetch('../NAVIGACIA/navigation.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('menu-script').innerHTML = data;
+                document.getElementById(`menu-script`).style.display = `block`;
+                });
+            </script>
+          
+            <div class="content-bar">
+                <div class="position-clearfix">
+                
+                    <div class="full-width-container">
+                        <h1>Všetky podstatné informácie na jednom mieste
+
+                        </h1>
+                        
+                        <p>
+                            Stiahni si appku <b>SOFTPLUS FIT</b> a získaj prehľad o exspirácií svojej permanentky či počte zostávajúcich vstupov.  V našej appke budeš mať uložený QR kód pre vstup cez turniket. Z aplikácie sa jediným kliknutím na odkaz dostaneš na náš web, na ktorom si dokážeš zakúpiť permanentku a vstup do fitka, solária a squashu. 
+                            <br>
+                            Aplikácia je bezplatná a dostupná pre operačné systémy 
+                            <a href="https://apps.apple.com/sk/app/softplus-fit/id1558848815?l=sk" target="_blank"><b>IOS</b></a> a <a href="https://play.google.com/store/apps/details?id=com.tss.softplusfit" target="_blank"><b>ANDROID</b></a>.
+                        </p>
+                        
+                        <h2>Ako sa do aplikácie prihlásiš?
+                        </h2>
+
+                        <ol>
+                            <li>Do kolónky doména zadaj: <b>fit.srcsl.sk</b>
+                            </li>
+
+                            <li>Vyplň svoju e-mailovú adresu
+                            </li>
+
+                            <li>Vyplň heslo, v prípade, že si heslo od svojho účtu nepamätáš, prejdi na našu stránku a klikni na kolónku zabudnuté heslo
+                            </li>
+
+                        </ol>
+                        
+                        <img class="full-width" src="../img/appka.jpeg" alt="Permanentka v aplikácií">
+                        
+                    </div>
+                </div>
+                
+            </div>
+                
+        </div>    
+    </article>
+    <script src="../NAVIGACIA/navigation.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>

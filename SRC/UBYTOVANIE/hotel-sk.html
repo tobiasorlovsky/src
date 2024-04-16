@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/stylesrc.css">
+    <link rel="stylesheet" href="../css/hotel.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>Ubytovanie</title>
+</head>
+<body>
+
+    <article>
+        <div class="content-container">
+
+            <div class="responsive-menu">
+                <button class="hamburger-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="menu-script" style="display: none;">
+
+            </div>
+            <script>
+                fetch('../NAVIGACIA/navigation.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('menu-script').innerHTML = data;
+                document.getElementById(`menu-script`).style.display = `block`;
+                });
+            </script>
+
+            <div class="content-bar">
+                <div class="position-clearfix">
+                    
+                    <div class="full-width-container">
+                        <div class="buttons-container">
+                            <button class="hotelbtn" id="btn1" onclick="changeColorAndNavigate(this, `hotel-sk.html`)">SK
+                            </button>
+                            <button class="hotelbtn" id="btn2" onclick="changeColorAndNavigate(this, `hotel-en.html`)">EN
+                            </button>
+                        </div>
+                        <h1>Ubytovanie v kráľovskom meste Stará Ľubovňa
+                        </h1>
+                        <p>Športové a relaxačné centrum Vám ponúka ubytovanie v kráľovskom meste Stará Ľubovňa. Vďaka nevšednému prostrediu ŠRC sa Váš pobyt u nás stane nezabudnuteľným.
+                        </p>
+                        <p>
+                        Kaviareň, bar, bowling, detské interiérové ihrisko, fitness centrum, workout veža, solárium a omnoho viac nájdete len u nás. 
+                        <b>"Toľko možností na jednom mieste."</b>
+                        </p>
+                    </div>
+                    <div class="flex-box">
+                        <div id="slideshow-container1" class="slideshow-container">
+                            <a id="prev1" class="prev" onclick="plusSlides(-1)">&#10094;
+                            </a>
+                            
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img class="slide-img1" src="../img/rooms/_MG_7634.jpg" alt="Dvojlôžková izba DeLuxe">
+                                </div>
+                            </div>
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img class="slide-img1" src="../img/rooms/_MG_7643.jpg" alt="Dvojlôžková izba DeLuxe">
+                                </div>
+                            </div>
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img class="slide-img1" src="../img/rooms/_MG_7646.jpg" alt="Dvojlôžková izba DeLuxe">
+                                </div>
+                            </div>
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img class="slide-img1" src="../img/rooms/_MG_7655.jpg" alt="Dvojlôžková izba DeLuxe">
+                                </div>
+                            </div>
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img class="slide-img1" src="../img/rooms/_MG_7724 (1).jpg" alt="Dvojlôžková izba DeLuxe">
+                                </div>
+                            </div>
+                            <a id="next1" class="next" onclick="plusSlides(1)">&#10095;
+                            </a>
+                        </div>
+                        
+                                
+                        <div class="flex-box-container1-3">
+                            <h3 class="left-h3">Dvojlôžková izba Deluxe
+                            </h3>
+                                <ul class="check">
+                                    <li><i class="fa-regular fa-circle-check"></i>manželská posteľ / 2 oddelené lôžka
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>smart TV
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>bezplatné WiFi
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>súkromná kúpeľňa
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>uteráky
+                                    </li>
+                                    <span id="dots1">
+                                        <li><i class="fa-regular fa-circle-check"></i>fén na vlasy
+                                        </li>
+                                        <li><i class="fa-regular fa-circle-check"></i>úložný priestor
+                                        </li>
+                                        <li><i class="fa-regular fa-circle-check"></i>rýchlovarná kanvica
+                                        </li>
+                                        <li><i class="fa-regular fa-circle-check"></i>káva a čaj
+                                        </li>
+                                        <li><i class="fa-regular fa-circle-check"></i>chladnička
+                                        </li>
+                                        <li><i class="fa-regular fa-circle-check"></i>pracovný stôl
+                                        </li>
+                                        <li><i class="fa-regular fa-circle-check"></i>mikrovlná rúra
+                                        </li>
+                                    </span>
+                                </ul>
+                                <button class="button-display" id="myBtn1" onclick="readMoreLess('dots1', 'myBtn1', 'moreText1')">Zobraziť viac
+                                </button>
+                    </div> 
+                    
+                    <div class="flex-box">
+                        <div id="slideshow-container2" class="slideshow-container">
+                            <a id="prev2" class="prev" onclick="plusSlides(-1)">&#10094;
+                            </a>
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img src="../img/rooms/_MG_7664.jpg" alt="Dvojlôžková izba Standard">
+                                </div>
+                            </div>
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img src="../img/rooms/_MG_7679.jpg" alt="Dvojlôžková izba Standard">
+                                </div>
+                            </div>
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img src="../img/rooms/_MG_7685 (1).jpg" alt="Dvojlôžková izba Standard">
+                                </div>
+                            </div>
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img src="../img/rooms/_MG_7724 (1).jpg" alt="Dvojlôžková izba Standard">
+                                </div>
+                            </div>
+                           
+                            <a id="next2" class="next" onclick="plusSlides(1)">&#10095;
+                            </a>
+                        </div>
+                                
+                        <div class="flex-box-container1-3">
+                            <h3 class="left-h3">Dvojlôžková izba Standard
+                            </h3>
+                            <ul class="check">
+                                <li><i class="fa-regular fa-circle-check"></i>manželská posteľ / 2 oddelené lôžka
+                                </li>
+                                <li><i class="fa-regular fa-circle-check"></i>smart TV
+                                </li>
+                                <li><i class="fa-regular fa-circle-check"></i>bezplatné WiFi
+                                </li>
+                                <li><i class="fa-regular fa-circle-check"></i>súkromná kúpeľňa
+                                </li>
+                                <li><i class="fa-regular fa-circle-check"></i>uteráky
+                                </li>
+                                <span id="dots2">
+                                    <li><i class="fa-regular fa-circle-check"></i>fén na vlasy
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>úložný priestor
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>rýchlovarná kanvica
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>káva a čaj
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>chladnička
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>pracovný stôl
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>mikrovlná rúra
+                                    </li>
+                                </span>    
+                            </ul>
+                            <button class="button-display" id="myBtn2" onclick="readMoreLess('dots2', 'myBtn2', 'moreText2')">Zobraziť viac
+                            </button>
+                    </div>    
+
+                    <div class="flex-box">
+                        <div id="slideshow-container3" class="slideshow-container">
+                            <a id="prev3" class="prev" onclick="plusSlides(-1)">&#10094;
+                            </a>
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img src="../img/rooms/_MG_7700 (1).jpg" alt="Apartmán Standard">
+                                </div>
+                            </div>
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img src="../img/rooms/_MG_7706 (1).jpg" alt="Apartmán Standard">
+                                </div>
+                            </div>
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img src="../img/rooms/_MG_7715 (2).jpg" alt="Apartmán Standard">
+                                </div>
+                            </div>
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img src="../img/rooms/_MG_7712 (1).jpg" alt="Apartmán Standard">
+                                </div>
+                            </div>
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img src="../img/rooms/_MG_7697 (1).jpg" alt="Apartmán Standard">
+                                </div>
+                            </div>
+                           
+                            <a id="next3" class="next" onclick="plusSlides(1)">&#10095;
+                            </a>
+                        </div>
+                                
+                        <div class="flex-box-container1-3">
+                            <h3 class="left-h3">Apartmán Standard
+                            </h3>
+                            <ul class="check">
+                                <li><i class="fa-regular fa-circle-check"></i>2x oddelená izba
+                                </li>
+                                <li><i class="fa-regular fa-circle-check"></i>1x manželská posteľ
+                                </li>
+                                <li><i class="fa-regular fa-circle-check"></i>2 oddelené lôžka
+                                </li>
+                                <li><i class="fa-regular fa-circle-check"></i>1x prístelka
+                                </li>
+                                <li><i class="fa-regular fa-circle-check"></i>2x smart TV
+                                </li>
+                                <span id="dots3">
+                                    <li><i class="fa-regular fa-circle-check"></i>bezplatné WiFi
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>súkromná kúpeľňa
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>uteráky
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>fén na vlasy
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>úložný priestor
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>kuchynka
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>rýchlovarná kanvica
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>káva a čaj
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>chladnička
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>pracovný stôl
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-check"></i>mikrovlná rúra
+                                    </li>
+                                </span>
+                            </ul>
+                            <button class="button-display" id="myBtn3" onclick="readMoreLess('dots3', 'myBtn3', 'moreText3')">Zobraziť viac
+                            </button>      
+                    </div>    
+                        
+
+                        
+                        
+                            
+
+                    <div class="full-width-container">
+                        <h1>Informácie pre ubytovaných hostí
+                        </h1>
+                    </div>
+                    <div class="flex-box">
+                        <div class="flex-box-container">
+                            <img class="half-width" src="../img/rooms/info.jpeg" alt="samoobslužný check-in">
+                        </div>
+                        <div class="flex-box-container left-flex-box">
+                            <h3>Samoobslužný check-in od 14.00
+                            </h3>
+                            <p>V deň príchodu Vám do správy na Booking.com a prostredníctvom SMS správy najneskôr do 14.00 hod. zašleme kód od keyboxu a číslo Vašej izby. Návod, ako keybox otvoriť nájdete na obrázku vľavo.
+                            </p>
+                            <h3>Samoobslužný check-out do 10.00
+                            </h3>
+                            <p>Pri odchode, prosím, nechajte kľúče vo dverách z vonkajšej strany.
+                            </p>
+                        </div>
+                        <div class="flex-box-container1-3">
+                            <h3>Faktúra a rekreačný poukaz</h3>
+                            <p>Faktúru Vám pošleme na Váš e-mail. Pošlite nám fakturačne údaje Vašej firmy / v prípade uplatnenia rekreačného poukazu meno, priezvisko a adresu trvalého bydliska. <a href="mailto:orlovsky.tobias@gmail.com"><b>Kliknite a pošlite nám Vaše údaje.</b></a>
+                            </p>
+                        </div>
+                        <div class="flex-box-container1-3">
+                            <h3>Bezplatné parkovanie</h3>
+                            <p>Bezplatné parkovanie v celom okolí Športového a relaxačného centra.
+                            </p>
+                        </div>
+                        <div class="flex-box-container1-3">
+                            <h3>Bezplatné WiFi</h3>
+                            <p>WiFi pripojenie na internet je prístupne bezplatne v celom komplexe Športového a relaxačného centra.
+                            </p>
+                        </div>
+                        <div class="flex-box-container">
+                            <img class="half-width" src="../img/restaurant.jpeg" alt="reštaurácia">
+                        </div>
+                        <div class="flex-box-container">
+                                <div class="restaurant-container">
+                                <h3 class="left-h3">Reštaurácia</h3>
+                                <p class="left-p"><b>NE-PO</b> 14.00-21.00</p>
+                                <p class="left-p"><b>UT-ŠT</b> 14.00-22.00</p>
+                                <p class="left-p"><b>PIA-SO</b> 14.00-0.00</p>
+
+                                <p class="left-p">Chcete sa u nás naraňajkovať? Pre nás žiaden problém. O raňajky náš personál v reštaurácií, radi Vám ich pripravíme a donesieme na izbu.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </article>
+    <!-- <link rel="stylesheet" href="../css/navigation.css"> -->
+    <script src="../NAVIGACIA/navigation.js"></script>
+    <script src="accomodation.js"></script>
+</body>
+</html> 

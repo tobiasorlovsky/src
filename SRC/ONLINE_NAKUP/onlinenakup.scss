@@ -1,0 +1,187 @@
+
+/* SETTINGS
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+*/
+/*font settings*/
+$font-size-base: 100%;
+$font-family: "Maven Pro", sans-serif;
+
+/*color settings*/
+$color-text: #333333;
+$color-primary: #ffa904;
+$color-secondary: #0262b8;
+$color-secondary-pointer: #538dc1;
+
+
+/*general*/
+.content-bar {
+  width: 100%;
+}
+
+/* CONTAINERS
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+*/
+
+.slideshow-container {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+}
+
+
+.slide.fade {
+  animation-name: fadeEffect;
+  animation-duration: 1s;
+  display: flex;
+}
+
+
+/* IMAGES
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+*/
+.image {
+  width: 18.75rem !important;
+  height: auto;
+  flex: 1;
+  padding-left: 50px;
+}
+
+.image img {
+    width: auto;
+    max-height: 500px;
+  }
+
+  .image-display {
+    display: none;
+}
+
+
+/* TYPOGRAPHY
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+*/
+.text {
+  overflow: hidden;
+  max-width: 100%;
+  padding: 0 50px;
+  flex: 1;
+}
+
+.text h2 {
+  margin-bottom: .625rem;
+}
+
+.text p {
+  margin-top: .9375rem;
+  margin-bottom: .625rem;
+}
+
+.tel {
+  color: $color-primary;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: underline;
+  &:focus,
+  &:hover {
+    color: $color-secondary;
+  }
+}
+
+h1 {
+  font-size: 2.5rem !important;
+  margin-top: 2rem !important;
+  margin-bottom: 0 !important;
+}
+
+ol {
+  text-align: left;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+}
+
+
+/* BUTTONS
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+*/
+.onlinebtn {
+    background-color: $color-primary;
+    color: #fff;
+    padding: 0.625rem 0.625rem;
+    margin: 20px 0 !important;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: $font-family;
+    border: none;
+    cursor: pointer;
+  }
+  
+/* Change color of dropdown links on hover */
+.onlinebtn:hover,
+.online:focus {background-color: $color-secondary}
+
+.onlinebtn > a {
+    color: #fff;
+}
+
+#more {display: none;}
+
+/*dots navigation*/
+.dots-container {
+    margin-top: 20px;
+}
+.dot {
+    height: 30px;
+    width: 30px;
+    margin: 0 2px;
+    background-color: $color-primary;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    padding-top: 5px;
+    &:focus,
+    &:hover {
+        background: $color-secondary;
+    }
+  }
+  
+  .active {
+    background-color: $color-secondary;
+  }
+
+  @media  (max-width: 1070px) {
+    .slideshow-container,
+    .slide {
+      display: block !important;
+    }
+
+    .image {
+      display: none;
+    }
+
+    .image-display {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+    }
+
+    .prev,
+    .next {
+      display: none;
+    }
+  }
+

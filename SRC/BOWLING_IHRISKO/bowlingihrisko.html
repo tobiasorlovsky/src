@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/stylesrc.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">    <title>BOWLING A DETSKÉ IHRISKO</title>
+</head>
+<body>
+    <article>
+        <div class="content-container">
+            
+            <div class="responsive-menu">
+                <button class="hamburger-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="menu-script" style="display: none;">
+
+            </div>
+            <script>
+                fetch('../NAVIGACIA/navigation.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('menu-script').innerHTML = data;
+                document.getElementById(`menu-script`).style.display = `block`;
+                });
+            </script>
+         
+            <div class="content-bar">
+                <div class="position-clearfix">
+
+                    <div class="full-width-container">
+                        <h1>PROFESIONÁLNE BOWLINGOVÉ DRÁHY
+                        </h1>
+
+                        <img class="full-width" src="../img/bowling_1.jpg" alt="bowling">
+
+                        <p>ŠRC disponuje dvoma profesionálnymi bowlingovými dráhami, ktoré sú určené nielen profesionálnym hráčom ale aj amatérom. 
+                        Pre najmenších, prípadne začiatočníkov, máme dispozícii jednu dráhu s pomocnými mantinelmi (tzv. bumper). Príďte si k nám zahrať túto skvelú hru v príjemnom prostredí našej kaviarne.
+                        </p>
+                        <h3>Rezervácie : 
+                            <a href="tel:+421949264533">0949 264 533
+
+                            </a>
+                        </h3>
+
+                        <h1>DETSKÉ INTERIÉROVÉ IHRISKO
+
+                        </h1>
+
+                        <img class="full-width" src="../img/ihrisko_1.jpg" alt="detské interiérové ihrisko">
+                        
+                        <p>V najväčšom detskom interiérovom ihrisku v Starej Ľubovni sa zabaví každé dieťa!
+                            Detské ihrisko v ŠRC je určené pre deti od 2 do 8 rokov.  Nájdete tu  veľkú šmykľavku, bazén s guličkami,  rôzne preliezky a mnoho ďalšieho. Väčšie deti sa určite zabavia pri bowlingu, stolnom futbale či biliarde.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <script src="../NAVIGACIA/navigation.js"></script>
+</body>
+</html>

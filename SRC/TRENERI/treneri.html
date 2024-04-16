@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/stylesrc.css">
+    <link rel="stylesheet" href="../css/treneri.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">    
+    <title>Tréneri</title>
+</head>
+<body>
+    <article>
+        
+        <div class="content-container">
+
+            <div class="responsive-menu">
+                <button class="hamburger-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="menu-script" style="display: none;">
+
+            </div>
+            <script>
+                fetch('../NAVIGACIA/navigation.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('menu-script').innerHTML = data;
+                document.getElementById(`menu-script`).style.display = `block`;
+                });
+            </script>
+            
+            <div class="content-bar">
+
+                <div class="position-clearfix">
+                    <h1 class="h1-big">TRÉNERI ŠRC FITNESS
+
+                    </h1>
+                    
+                    <div class="slideshow-container">
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;
+                        </a>
+
+                        <div class="slide fade">
+                            
+                            <div class="image">
+                                <img src="../img/patrik.png" alt="Patrik Řezníček">
+                            </div>
+
+                            <div class="text">
+                                <h2>Patrik Řezníček
+
+                                </h2>
+                                <a class="tel" href="tel:+421918301221">0918 301 221
+
+                                </a>
+                                <p>
+                                    Ahoj. Volám sa Patrik Řezníček a som certifikovaný kondičný tréner pre individuálne športy. Fitness sa venujem už viac ako 8 rokov a posledné 3 roky sa venujem klientom ako kondičný tréner. Špecializujem sa najmä na silové a kruhové tréningy. Rád vyhoviem všetkým potrebám klienta a prispôsobím tréning tak, aby to bolo efektívne a aj príjemné.
+                                    <span id="dots1" style="display: none;">Vo svojom voľnom čase sa venujem literatúre ohľadom zdravého stravovania, a preto chcem viesť svojich klientov k dosiahnutiu svojich cieľov bez drastických diét, naopak ich chcem naučiť ako si vytvoriť balans.
+                                    </span>
+
+                                </p>
+
+                                <button id="myBtn1" onclick="readMoreLess('dots1', 'myBtn1', 'moreText1')">Zobraziť viac
+                                </button>
+                            
+                            </div>
+                        </div>
+                        
+                        <div class="slide fade">
+
+                            <div class="image">
+                                <img src="../img/sidonia.png" alt="Sidónia Compľová">
+                            </div>
+
+                            <div class="text">
+                                <h2>Sidónia Compľová
+
+                                </h2>
+                                <a class="tel" href="tel:+421949211504">0949 211 504
+                                </a>
+
+                                <p>Sidonia Compľová je certifikovaná fitness trénerka 1. kvalifikačného stupňa. Športu sa venuje už niekoľko rokov. Špecializuje sa hlavne na silový tréning, ktorému sa už roky nevenujú len muži. Hlavne silovým tréningom si vieš vybudovať krásnu ženskú postavu a to nabraním svalovej hmoty. Sidonia pristupuje ku klientom individuálne s nadšením a trpezlivosťou.
+                                    <span id="dots2" style="display: none;"> Nemaj strach, ak si začiatočník čaká ťa malá previerka toho čo vieš a zvyšok sa naučíš. Sidonia ťa prevedie od začiatku a to najprv cvikmi na TRX Total Body Resistance Exercise, ktorý rozvíja telesnú silu pomocou funkčných pohybov a samozrejme slúži ako pomôcka pri rôznych cvikoch. Ak si pokročilý ideš rovno na silový tréning, kde sa budeme maximálne venovať technike a samotnému prevedeniu cvikov. Sidonia ti taktiež pomôže so zostavením tvojho jedálnička, keďže pracuje aj ako výživová poradkyňa. Dá ti rady ako byť fit po celý rok, nie len v lete, čomu sa vyvarovať,  a hlavne ako chudnúť bez hladovania!
+                                    </span>
+                                </p>
+                                
+                                <button id="myBtn2" onclick="readMoreLess('dots2', 'myBtn2', 'moreText2')">Zobraziť viac
+                                </button>
+
+                            </div>
+                         
+                        </div>
+                
+                        <div class="slide fade">
+                          
+                            <div class="image">
+                              <img src="../img/natalia_rybovicova.jpg" alt="Natália Rybovičová">
+                          </div>
+
+                          <div class="text">
+                              <h2>Natália Rybovičová</h2>
+                              <a class="tel" href="tel:+421949211504">0949 211 504
+                              </a>
+                              
+                              <p>Natália Rybovičová je certifikovaná fitness trénerka 1. kvalifikačného stupňa. Natália je tiež reprezentantkou SR v kategórii bikini fitness. Cvičeniu sa aktívne venuje od 18 rokov. Špecializuje sa na silové tréningy a tréningy s vlastnou váhou tela, ktoré prispôsobuje potrebám klienta. Natália Vám dokáže pomôcť pri naberaní svalovej hmoty, redukcii hmotnosti spevňovaní postavy.
+                                <span id="dots3" style="display: none;">  Taktiež vie vysvetliť vyvážené stravovanie a vypracovať stravovací plán na mieru podľa predstáv klienta, ktorý je efektívny a flexibilný. Sama na sebe vyskúšala rôzne tréningové princípy a formy stravovania a tieto svoje vedomosti aplikuje do praxe. Praktické skúsenosti nadobúda aj vedením osobných tréningov a samovzdelávaním sa v tomto obore. Ku klientom pristupuje vysoko individuálne, s nadšením, je komunikatívna a potreby klienta sú pre ňu najdôležitejšie. Okrem toho Vám dokáže poradiť aj s vhodným výberom doplnkov výživy vzhľadom k cieľu klienta. Už teraz sa teší na spoločné spolupráce.
+                                </span>
+                              </p>
+
+                              <button id="myBtn3" onclick="readMoreLess('dots3', 'myBtn3', 'moreText3')">Zobraziť viac</button>
+
+                          </div>
+                        </div>
+                      
+                        <div class="slide fade">
+                          
+                          <div class="image">
+                              <img src="../img/ada.png" alt="Adriana Stesňaková">
+                          </div>
+
+                          <div class="text">
+                              <h2>Adriana Stesňaková
+
+                              </h2>
+                             
+                              <a class="tel" href="tel:+421918225610">0918 225 610
+                              </a>
+                              <p>Moje meno je Adriána Stesňáková. Som certifikovaný kondičný tréner 1. stupňa, ktorý si s nadšením rozširuje obzory prostredníctvom kurzov, literatúry a samoštúdia. Od roku 2016 aktívne vediem kondičné kruhové tréningy v interiéri i exteriéri. Vyznačujú sa pozitívnou energiou, rôznorodými cvikmi, rozličnými typmi (TABATA, HIIT, klasický kruhový tréning…) a dobrou partiou.
+                                <span id="dots4" style="display: none;"> Ako osobný tréner Ti ponúkam silové tréningy, tréningy vlastnou váhou (kombinácie plyometrickych, izometrickych cvikov, TRX, pilates, cviky na mobilitu…) s maximálnym individuálnym prístupom. Zameriavam sa aj na ženy po pôrode, keďže sama som 2-násobnou mamou, na redukciu tuku, spevnenie tela, naberanie svalovej hmoty či zlepšenie kondície. Ponúkam vypracovanie individuálneho stravovacieho a tréningového plánu s diagnostikou a podrobnou konzultáciou. Naučím Ťa, ako sa zdravo a vyvážene dlhodobo stravovať bez drastických diét a prijímať pohyb ako radosť a samozrejmosť.
+                                </span>
+                                
+                              </p>
+
+                              <button id="myBtn4" onclick="readMoreLess('dots4', 'myBtn4', 'moreText4')">Zobraziť viac
+                              </button>
+
+                          </div>
+                          
+                      </div>
+
+                         <a class="next" onclick="plusSlides(1)">&#10095;
+                         </a>
+   
+                    </div>
+                
+                    <div class="dots-container" style="text-align:center">
+                        
+                        <span class="dot" onclick="currentSlide(1)">
+                        </span>
+                        <span class="dot" onclick="currentSlide(2)">
+                        </span>
+                        <span class="dot" onclick="currentSlide(3)">
+                        </span>
+                        <span class="dot" onclick="currentSlide(4)">
+                        </span>
+                        
+                    </div>
+                
+                </div>
+            </div>
+            
+        </div>    
+    </article>
+    <script src="../NAVIGACIA/navigation.js"></script> 
+    <script src="treneri.js"></script>
+</body>
+</html>

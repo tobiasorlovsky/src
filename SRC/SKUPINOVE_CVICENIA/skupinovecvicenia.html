@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/stylesrc.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">    <title>Skupinové cvičenia</title>
+</head>
+<body>
+    <article>
+        <div class="content-container">
+
+            <div class="responsive-menu">
+                <button class="hamburger-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="menu-script" style="display: none;">
+
+            </div>
+            <script>
+                fetch('../NAVIGACIA/navigation.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('menu-script').innerHTML = data;
+                document.getElementById(`menu-script`).style.display = `block`;
+                });
+            </script>
+         
+            <div class="content-bar">
+
+                <div class="position-clearfix">
+
+                    <div class="full-width-container">
+
+                        <h1>Skupinové tréningy
+                        </h1>
+                        <img class="full-width" src="../img/jumping.jpeg" alt="Skupinové cvičenie">
+                        
+                        <p>
+                            V ŠRC fitness pre Vás ponúkame širokú škálu tréningov. Skupinové, ale aj individuálne tréningy prebiehajú vždy pod dohľadom skúsených certifikovaných trénerov.
+                        </p>
+                    </div>
+
+                    <div class="flex-box">
+                        <div class="flex-box-container">
+                            <h3>Spinning s Luciou
+                            </h3>
+                            <p>PONDELOK, STREDA 18.00-19.00
+                            </p>
+                            <p>Rezervácia: 0902 582 163
+                            </p>
+                        </div>
+                        
+                        <div class="flex-box-container">
+                            <h3>Trampolíny s Majkou
+
+                            </h3>
+                            <p>UTOROK, ŠTVRTOK 18.00-19.00
+
+                            </p>
+                            <p>Rezervácia: 0907 950 385
+
+                            </p>
+                        </div>
+                        
+                        <div class="flex-box-container">
+                            <h3>Trampolíny s Adrianou
+
+                            </h3>
+                            <p>UTOROK, ŠTVRTOK 17.00-18.00
+
+                            </p>
+                            <p>Rezervácia: 0902 582 163
+
+                            </p>
+                        </div>
+
+                        <div class="flex-box-container">
+                            <h3>Kruhové tréningy s Natáliou
+
+                            </h3>
+                            <p>Rezervácia: 0948 225 847
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>  
+    <script src="../NAVIGACIA/navigation.js"></script>
+</body>
+</html>

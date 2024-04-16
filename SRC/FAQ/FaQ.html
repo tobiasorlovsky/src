@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/stylesrc.css">
+    <link rel="stylesheet" href="../css/faq.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">    <title>Často kladené otázky</title>
+</head>
+<body>
+    <article>
+        <div class="content-container">
+
+            <div class="responsive-menu">
+                <button class="hamburger-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="menu-script" style="display: none;">
+
+            </div>
+            <script>
+                fetch('../NAVIGACIA/navigation.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('menu-script').innerHTML = data;
+                document.getElementById(`menu-script`).style.display = `block`;
+                });
+            </script>
+
+            
+            <div class="content-bar">
+
+                <div class="position-clearfix">
+
+                    <div class="full-width-container">
+
+                        <div class="faq-container">
+                            <h1>Často kladené otázky
+                            </h1>
+
+                            <h3>OD AKÉHO VEKU MÔŽEM CVIČIŤ V ŠRC?
+                            </h3>
+
+                            <p>V ŠRC môžu cvičiť osoby staršie ako 15 rokov.
+                            </p>
+
+                            <h3>JE PERMANENTKA V ŠRC PRENOSNÁ?
+                            </h3>
+
+                            <p>Naše permanentky sú neprenosné, sú predávané na konkrétne meno.
+                            </p>
+
+                            <h3>AKO DLHO TRVÁ REGISTRÁCIA DO VÁŠHO SYSTÉMU?
+                            </h3>
+
+                            <p>Registrácia trvá menej ako 1 minútu.
+                            </p>
+
+                            <h3>AKO DLHO TRVÁ NÁKUP PERMANENTKY?
+                            </h3>
+
+                            <p>Po prihlásení zakúpiš permanentku za menej ako 1 minútu.
+                            </p>
+
+                            <h3>AKO FUNGUJE NÁKUP PERMANENTKY A REZERVÁCIA SQUASHU/SOLÁRIA?
+                            </h3>
+
+                            <p>Návod, ako zakúpiť permanentku, vytvoriť rezerváciu squashu / solária nájdeš 
+                                <a href="../ONLINE_NAKUP/onlinenakup.html"><b>na tomto odkaze</b>
+                                </a>.
+                            </p>
+
+                            <h3>PO REGISTRÁCIÍ MI DO E-MAILU NEPRIŠIEL QR KÓD, ČO MÁM ROBIŤ?
+                            </h3>
+
+                            <p>
+                                V prípade, že ti po registrácií neprišiel QR kód, skús skontrolovať priečinok SPAM a uisti sa, že si pri registrácií zadal správnu e-mailovú adresu. V prípade potreby kontaktuj našu technickú podporu.
+                            </p>
+
+                            <h3>ČÍTAČKA NA TURNIKETE NECHCE NAČÍTAŤ MÔJ QR KÓD. ČO MÁM ROBIŤ?
+                            </h3>
+
+                            <p>Skús zvýšiť jas obrazovky na svojom mobilnom zariadení alebo naskenuj QR kód z väčšej diaľky.
+                            </p>
+
+                            <h3>AKO SA PRIHLÁSIM DO APLIKÁCIE?
+                            </h3>
+
+                            <p>Návod, ako sa prihlásiť do aplikácie nájdeš <a href="../PERMANENTKA_APPKA/appka.html"><b>na tomto odkaze</b></a>.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>    
+    </article>
+    <script src="../NAVIGACIA/navigation.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/stylesrc.css">
+    <link rel="stylesheet" href="../css/onlinenakup.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">    <title>Nákup permanentky</title>
+</head>
+<body>
+    <article>
+        <div class="content-container">
+
+            <div class="responsive-menu">
+                <button class="hamburger-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="menu-script" style="display: none;">
+
+            </div>
+            <script>
+                fetch('../NAVIGACIA/navigation.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('menu-script').innerHTML = data;
+                document.getElementById(`menu-script`).style.display = `block`;
+                });
+            </script>
+            
+            <div class="content-bar">
+
+                <div class="position-clearfix">
+                    <h1>ONLINE NÁKUP VSTUPU A PERMANENTKY
+
+                    </h1>
+                    <div class="onlineshop">
+
+                        <button class="onlinebtn"><a href="https://fit.srcsl.sk/login" target="_blank">ONLINE NÁKUP: FIT.SRCSL.SK</a>
+                        </button>
+
+                    </div>
+                    
+                    <div class="slideshow-container">
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;
+                        </a>
+
+                        <div class="slide fade">
+                            <div class="image">
+                                <img src="../img/f1.jpg" alt="Vstup do fitness centra">
+                            </div>
+
+                            <div class="text">
+                                <h2>Vstup do fitness centra
+
+                                </h2>
+                                
+                                <p>Po úspešnom zaplatení permanentky alebo vstupu ti <b>príde do e-mailu QR kód</b>, 
+                                    ktorý   budeš používať pri vstupe.
+                                    
+                                    <span id="dots1">
+                                    QR kód načítaj na čítačke turniketu z cca. 5 cm výšky. <br>V prípade, že čítačka nechce tvoj QR kód naskenovať, <b>zvýš jas na obrazovke svojho telefónu</b>, alebo ho skús naskenovať z väčšej diaľky.
+                                    <img class="image-display" src="../img/f1.jpg" alt="Vstup do fitness centra">
+                                    
+                                        
+                                    </span>
+                                </p>
+
+                                <button class="button-display" id="myBtn1" onclick="readMoreLess('dots1', 'myBtn1', 'moreText1')">Zobraziť viac
+                                </button>
+                            
+                            </div>
+                        </div>
+                        
+                        <div class="slide fade">
+
+                            <div class="image">
+                                <img src="../img/f2.jpeg" alt="Screenshot-nákup vstupu bez registrácie">
+                            </div>
+
+                            <div class="text">
+                                <h2>Vstup bez registrácie
+
+                                </h2>
+                                
+                                <p>Jednorazový vstup do fitka, solária a squashu zakúpiš aj bez registrácie. 
+                                    
+                                    <span id="dots2">
+                                    <br>Stačí, ak na úvodnej stránke klikneš na tlačidlo <b>kúpiť</b> a zadáš svoj e-mail, na ktorý ti príde QR kód pre vstup cez turniket. <br>V prípade, že sa chceš zaregistrovať, klikni na tlačidlo <b>Registrovať sa</b>.
+                                    <img class="image-display" src="../img/f2.jpeg" alt="Screenshot-nákup vstupu bez registrácie">
+                                    </span>
+                                </p>
+
+                                <button class="button-display" id="myBtn2" onclick="readMoreLess('dots2', 'myBtn2', 'moreText2')">Zobraziť viac
+                                </button>
+
+                            </div>
+                         
+                        </div>
+                
+                        <div class="slide fade">
+                         
+                          <div class="image">
+                            <img src="../img/f3.jpeg" alt="Screenshot-nákup vstupu s registráciou">
+                          </div>
+
+                          <div class="text">
+                              <h2>Vstup s registráciou
+
+                              </h2>
+                              
+                              <p>Vyplň svoje údaje, zadaj heslo a klikni na tlačidlo <b>Registrovať sa.</b><br>
+                                
+                                <span id="dots3">
+                                Heslo si dobre zapamätaj, budeš ho potrebovať pri ďalšom nákupe permanentky. <br>
+                                <b>Registrácia je možná výhradne pre osoby staršie ako 15 rokov.</b>
+                                <img class="image-display" src="../img/f3.jpeg" alt="Screenshot-nákup vstupu s registráciou">
+                                </span>
+                              </p>
+
+                              <button class="button-display" id="myBtn3" onclick="readMoreLess('dots3', 'myBtn3', 'moreText3')">Zobraziť viac</button>
+
+                          </div>
+                        </div>
+                      
+                        <div class="slide fade">
+                          
+                            <div class="image">
+                            <img src="../img/f4.jpeg" alt="Screenshot-nákup permanentky">
+                          </div>
+
+                          <div class="text">
+                              <h2>Nákup permanentky
+
+                              </h2>
+                             
+                              <ol>
+                                <li>nákup permanentky je možný len pre registrovaných zákazníkov
+                                </li>
+
+                                <li>prihlás sa do svojho účtu
+                                </li>
+
+                                <li>prejdi do menu a klikni na <b>nákup permanentky</b>
+                                </li>
+
+                                <li>vyber permanentku, ktorú chceš kúpiť a klikni na <b>"Kúpiť cez internet banking"</b>
+                                </li>
+                                
+                                <span id="dots4"> 
+                                    
+                                    <li>v prípade, že chceš zakúpiť zľavnenú permanentku (študent / policajt / hasič)
+                                        <b>nahraj preukaz na získanie zľavovej skupiny</b> - v pravom hornom rohu klikni na svoje meno a nahraj potvrdenie o návšteve školy alebo ISIC kartu.
+                                    </li>
+                                <img class="image-display" src="../img/f4.jpeg" alt="Screenshot-nákup permanentky">
+                                </span>
+
+                                </ol>
+
+                                <button class="button-display" id="myBtn4" onclick="readMoreLess('dots4', 'myBtn4', 'moreText4')">Zobraziť viac</button>
+                            </div>
+                          
+                      </div>
+                      <div class="slide fade">
+                        <div class="image">
+                            <img src="../img/f6.png" alt="Screenshot-rezervácia squashu alebo solária">
+                        </div>
+
+                        <div class="text">
+                            <h2>Rezervácia squashu a solária</h2>
+                            
+                            <p>Klikni na miestnosť, ktorú chceš zarezervovať (solárium / squash). <br>
+                                
+                                <span id="dots5">
+                                Pri rezervácií squashu turniket pustí do priestorov fitness centra 2 osoby na 1 QR kód, každá ďalšia osoba je povinná si zakúpiť jednorázový vstup do posilňovne
+                                <img class="image-display" src="../img/f6.png" alt="Screenshot-rezervácia squashu alebo solária">
+                               
+                            </span>
+                            </p>
+
+                            <button class="button-display" id="myBtn5" onclick="readMoreLess('dots5', 'myBtn5', 'moreText5')">Zobraziť viac
+                            </button>
+
+                        </div>
+                     
+                    </div>
+                    <div class="slide fade">
+                       
+                        <div class="image">
+                            <img src="../img/f7.jpeg" alt="Screenshot-vytvorenie rezervácie">
+                        </div>
+                        
+                        <div class="text">
+                            <h2>Vytvorenie rezervácie</h2>
+                            
+                            <p>Vyber deň rezervácie, nižšie zvoľ počet minút rezervácie.
+                                
+                                <span id="dots6">
+                                <img class="image-display" src="../img/f7.jpeg" alt="Screenshot-vytvorenie rezervácie">
+                                
+                                </span>
+                            </p>
+
+                            <button class="button-display" id="myBtn6" onclick="readMoreLess('dots6', 'myBtn6', 'moreText6')">Zobraziť viac
+                            </button>
+
+                        </div>
+                     
+                    </div>
+                    <div class="slide fade">
+                        
+                        <div class="image">
+                            <img src="../img/f8.jpg" alt="Screenshot-potvrdenie rezervácie">
+                        </div>
+                        
+                        <div class="text">
+                            <h2>Potvrdenie rezervácie
+                            </h2>
+                            
+                            <p>Zvoľ presný čas rezervácie.
+                            Po zvolení času rezervácie budeš presmerovaný na platobnú bránu.
+                                
+                                <span id="dots7">
+                                <img class="image-display" src="../img/f8.jpg" alt="Screenshot-potvrdenie rezervácie">
+                                
+                                </span>
+                            
+                            </p>
+
+                            <button class="button-display" id="myBtn7" onclick="readMoreLess('dots7', 'myBtn7', 'moreText7')">Zobraziť viac
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <div class="slide fade">
+                        
+                        <div class="image">
+                            <img src="../img/f5.png" alt="Screenshot-platba">
+                        </div>
+
+                        <div class="text">
+                            <h2>Platba
+                            </h2>
+                            
+                            <p>Po zaplatení budeš presmerovaný späť na stránku, nezatváraj okno, pretože inak tvoja platba nebude overená.<br>
+                                
+                                <span id="dots8">
+                                    Skontroluj, či tvoja banka nevyžaduje overenie platby v jej aplikácií.
+                                    <img class="image-display" src="../img/f5.png" alt="Screenshot-platba">
+                                </span>
+
+                            </p>
+
+                            <button class="button-display" id="myBtn8" onclick="readMoreLess('dots8', 'myBtn8', 'moreText8')">Zobraziť viac
+                            </button>
+
+                        </div>
+                    </div>
+
+                         <a class="next" onclick="plusSlides(1)">&#10095;
+                         </a> 
+                    </div>
+                
+                    <div class="dots-container" style="text-align:center">
+                        
+                        <span class="dot" onclick="currentSlide(1)">
+                            1
+                        </span>
+                        <span class="dot" onclick="currentSlide(2)">
+                            2
+                        </span>
+                        <span class="dot" onclick="currentSlide(3)">
+                            3
+                        </span>
+                        <span class="dot" onclick="currentSlide(4)">
+                            4
+                        </span>
+                        <span class="dot" onclick="currentSlide(5)">
+                            5
+                        </span>
+                        <span class="dot" onclick="currentSlide(6)">
+                            6
+                        </span>
+                        <span class="dot" onclick="currentSlide(7)">
+                            7
+                        </span>
+                        <span class="dot" onclick="currentSlide(8)">
+                            8
+                        </span>
+                        
+                    </div>
+                
+                </div>
+            </div>
+            
+        </div>    
+    </article>
+    <script src="../NAVIGACIA/navigation.js"></script>
+    <script src="onlinenakup.js"></script>
+</body>
+</html>

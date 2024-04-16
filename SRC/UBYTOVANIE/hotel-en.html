@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/stylesrc.css">
+    <link rel="stylesheet" href="../css/hotel.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>Accommodation</title>
+</head>
+<body>
+    <article>
+        <div class="content-container">
+
+            <div class="responsive-menu">
+                <button class="hamburger-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="menu-script" style="display: none;">
+
+            </div>
+
+            <script>
+                fetch('../NAVIGACIA/navigation.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('menu-script').innerHTML = data;
+                document.getElementById(`menu-script`).style.display = `block`;
+                });
+            </script>
+
+            <div class="content-bar">
+                <div class="position-clearfix">
+                    
+                    <div class="full-width-container">
+
+                        <div class="buttons-container">
+
+                            <button class="hotelbtn" id="btn1" onclick="changeColorAndNavigate(this, `hotel-sk.html`)">SK
+                            </button>
+                            <button class="hotelbtn" id="btn2" onclick="changeColorAndNavigate(this, `hotel-en.html`)">EN
+                            </button>
+
+                        </div>
+
+                        <h1>Accommodation in twin rooms and apartments in Stará Ľubovna
+                        </h1>
+                        <p>
+                            Our Sports and Relax Center offers you accommodation in the royal town of Stará Ľubovňa.
+                            <br>
+                            Thanks to the extraordinary environment of Sports and Relax Center will be your stay with us unforgettable.
+                        </p>
+    
+                        <p>
+                            You can find here cafe, bar, bowling, children's indoor playground, fitness center, workout tower, solarium and much more.  
+                            <b>“So many options in one place.”
+                            </b>
+                        </p>
+                    </div>
+                    <div class="flex-box">
+
+                        <div id="slideshow-container1" class="slideshow-container">
+
+                            <a id="prev1" class="prev" onclick="plusSlides(-1)">&#10094;
+                            </a>
+                            
+                            <div class="slide fade">
+
+                                <div class="image">
+                                    <img class="slide-img1" src="../img/rooms/_MG_7634.jpg" alt="Dvojlôžková izba DeLuxe">
+                                
+                                </div>
+                            </div>
+
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img class="slide-img1" src="../img/rooms/_MG_7643.jpg" alt="Dvojlôžková izba DeLuxe">
+                                </div>
+                            </div>
+
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img class="slide-img1" src="../img/rooms/_MG_7646.jpg" alt="Dvojlôžková izba DeLuxe">
+                                </div>
+                            </div>
+
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img class="slide-img1" src="../img/rooms/_MG_7655.jpg" alt="Dvojlôžková izba DeLuxe">
+                                </div>
+                            </div>
+
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img class="slide-img1" src="../img/rooms/_MG_7724 (1).jpg" alt="Dvojlôžková izba DeLuxe">
+                                </div>
+                            </div>
+
+                            <a id="next1" class="next" onclick="plusSlides(1)">&#10095;
+                            </a>
+
+                        </div>
+                        
+                                
+                        <div class="flex-box-container1-3">
+                            <h3 class="left-h3">Deluxe room
+                            </h3>
+                                <ul class="check">
+                                    <li><i class="fa-regular fa-circle-check"></i>double bed (double room)
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>2 separate beds (twin room)
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>smart TV
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>free wifi/ wifi internet connection
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>private bathroom
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>towels
+                                    </li>
+
+                                    <span id="dots1">
+                                        <li><i class="fa-regular fa-circle-check"></i>hairdryer
+                                        </li>
+
+                                        <li><i class="fa-regular fa-circle-check"></i>storage
+                                        </li>
+
+                                        <li><i class="fa-regular fa-circle-check"></i>electric kettle
+                                        </li>
+
+                                        <li><i class="fa-regular fa-circle-check"></i>coffee and tea
+                                        </li>
+
+                                        <li><i class="fa-regular fa-circle-check"></i>fridge
+                                        </li>
+
+                                        <li><i class="fa-regular fa-circle-check"></i>desk
+                                        </li>
+
+                                        <li><i class="fa-regular fa-circle-check"></i>microwave
+                                        </li>
+
+                                    </span>
+                                </ul>
+
+                                <button class="button-display" id="myBtn1" onclick="readMoreLess('dots1', 'myBtn1', 'moreText1')">Read more
+                                </button>
+                    </div> 
+                    
+                    <div class="flex-box">
+
+                        <div id="slideshow-container2" class="slideshow-container">
+                            
+                            <a id="prev2" class="prev" onclick="plusSlides(-1)">&#10094;
+                            </a>
+
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img src="../img/rooms/_MG_7664.jpg" alt="Dvojlôžková izba Standard">
+                                </div>
+                            </div>
+
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img src="../img/rooms/_MG_7679.jpg" alt="Dvojlôžková izba Standard">
+                                </div>
+                            </div>
+
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img src="../img/rooms/_MG_7685 (1).jpg" alt="Dvojlôžková izba Standard">
+                                </div>
+                            </div>
+
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img src="../img/rooms/_MG_7724 (1).jpg" alt="Dvojlôžková izba Standard">
+                                </div>
+                            </div>
+                           
+                            <a id="next2" class="next" onclick="plusSlides(1)">&#10095;
+                            </a>
+
+                        </div>
+                                
+                        <div class="flex-box-container1-3">
+                            
+                            <h3 class="left-h3">Standard room
+                            </h3>
+
+                            <ul class="check">
+                                <li><i class="fa-regular fa-circle-check"></i>double bed (double room)
+                                </li>
+
+                                <li><i class="fa-regular fa-circle-check"></i>2 separate beds (twin room)
+                                </li>
+
+                                <li><i class="fa-regular fa-circle-check"></i>smart TV
+                                </li>
+
+                                <li><i class="fa-regular fa-circle-check"></i>free wifi/ wifi internet connection
+                                </li>
+
+                                <li><i class="fa-regular fa-circle-check"></i>private bathroom
+                                </li>
+
+                                <li><i class="fa-regular fa-circle-check"></i>towels
+                                </li>
+
+                                <span id="dots2">
+                                    <li><i class="fa-regular fa-circle-check"></i>hairdryer
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>storage
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>electric kettle
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>offee and tea
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>fridge
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>desk
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>microwave
+                                    </li>
+
+                                </span>    
+                            </ul>
+
+                            <button class="button-display" id="myBtn2" onclick="readMoreLess('dots2', 'myBtn2', 'moreText2')">Read more
+                            </button>
+                    </div>    
+
+                    <div class="flex-box">
+
+                        <div id="slideshow-container3" class="slideshow-container">
+                            <a id="prev3" class="prev" onclick="plusSlides(-1)">&#10094;
+                            </a>
+
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img src="../img/rooms/_MG_7700 (1).jpg" alt="Apartmán Standard">
+                                </div>
+                            </div>
+
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img src="../img/rooms/_MG_7706 (1).jpg" alt="Apartmán Standard">
+                                </div>
+                            </div>
+
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img src="../img/rooms/_MG_7715 (2).jpg" alt="Apartmán Standard">
+                                </div>
+                            </div>
+
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img src="../img/rooms/_MG_7712 (1).jpg" alt="Apartmán Standard">
+                                </div>
+                            </div>
+
+                            <div class="slide fade">
+                                <div class="image">
+                                    <img src="../img/rooms/_MG_7697 (1).jpg" alt="Apartmán Standard">
+                                </div>
+                            </div>
+                           
+                            <a id="next3" class="next" onclick="plusSlides(1)">&#10095;
+                            </a>
+                        </div>
+                                
+                        <div class="flex-box-container1-3">
+                            <h3 class="left-h3">Apartment Standard
+                            </h3>
+
+                            <ul class="check">
+                                <li><i class="fa-regular fa-circle-check"></i>two separate rooms
+                                </li>
+
+                                <li><i class="fa-regular fa-circle-check"></i>double bed (double room)
+                                </li>
+
+                                <li><i class="fa-regular fa-circle-check"></i>2 separate beds (twin room)
+                                </li>
+
+                                <li><i class="fa-regular fa-circle-check"></i>one extra bed
+                                </li>
+
+                                <li><i class="fa-regular fa-circle-check"></i>2x smart TV
+                                </li>
+
+                                <span id="dots3">
+                                    <li><i class="fa-regular fa-circle-check"></i>free wifi/ wifi internet connection
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>private bathroom
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>towels
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>hairdryer
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>storage
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>electric kettle
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>coffee and tea
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>fridge
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>desk
+                                    </li>
+
+                                    <li><i class="fa-regular fa-circle-check"></i>microwave
+                                    </li>
+                                   
+                                </span>
+                            </ul>
+
+                            <button class="button-display" id="myBtn3" onclick="readMoreLess('dots3', 'myBtn3', 'moreText3')">Read more
+                            </button>      
+                    </div>    
+                        
+
+                        
+                        
+                            
+
+                    <div class="full-width-container">
+                        <h1>INFORMATION FOR ACCOMMODATED GUESTS
+                        </h1>
+                    </div>
+
+                    <div class="flex-box">
+
+                        <div class="flex-box-container">
+
+                            <img class="half-width" src="../img/rooms/info.jpeg" alt="samoobslužný check-in">
+                        </div>
+
+                        <div class="flex-box-container left-flex-box">
+                            <h3>SELF-SERVICE CHECK-IN from 2.00 pm
+                            </h3>
+                            <p>
+                                On the day of arrival, no later than 2:00 pm, you will receive a message on Booking.com and via SMS we will send the keybox code and your room number. Instructions on how to open the keybox can be found in the picture on the left.
+                            </p>
+
+                            <h3>SELF-SERVICE CHECK-OUT until 10.00 am
+                            </h3>
+
+                            <p>When leaving (check-out), please, leave the keys in the door from the outside.
+                            </p>
+
+                        </div>
+
+                        <div class="flex-box-container1-3">
+                            <h3>INVOICE AND RECREATION VOUCHER</h3>
+
+                            <p>
+                                We will send the invoice to your e-mail. All you have to do is send us the invoicing data of the company / in the case of using a recreation voucher, your name, surname and address of permanent residence. 
+                                <a href="mailto:orlovsky.tobias@gmail.com"><b>Click and send us your data.</b>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="flex-box-container1-3">
+                            <h3>FREE PARKING</h3>
+                            <p>Free parking in the whole area of the Sports and Relax Center - ŠRC.
+                            </p>
+                        </div>
+
+                        <div class="flex-box-container1-3">
+                            <h3>FREE WI-FI</h3>
+                            <p>WI-FI internet connection is available throughout the accommodation free of charge.
+                            </p>
+                        </div>
+
+                        <div class="flex-box-container">
+                            <img class="half-width" src="../img/restaurant.jpeg" alt="reštaurácia">
+                        </div>
+
+                        <div class="flex-box-container">
+                                <div class="restaurant-container">
+                                <h3 class="left-h3">Restaurant</h3>
+                                <p class="left-p"><b>SUN-MON</b> 2.00 pm.-9.00 pm.
+                                </p>
+
+                                <p class="left-p"><b>TUE-THU</b> 2.00 pm.-10.00 pm.
+                                </p>
+
+                                <p class="left-p"><b>FRI-SAT</b> 2.00 pm.-10.00 am.
+                                </p>
+
+                                <p class="left-p">Do you want to have a breakfast with us? No problem for us. Report breakfast to our staff at the bar and we will prepare it for you to your room.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </article>
+    <script src="../NAVIGACIA/navigation.js"></script>
+    <script src="accomodation.js"></script>
+</body>
+</html> 
